@@ -265,62 +265,73 @@
   }
 
   /* ── PROJECTS ── */
-  #projects { background: var(--light); }
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-  }
-  .project-card {
-    background: var(--white);
-    border: 1px solid var(--line);
-    padding: 2rem;
-    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
-    opacity: 0; transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s, box-shadow 0.25s, border-color 0.25s;
-  }
-  .project-card.visible { opacity: 1; transform: none; }
-  .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(27,58,92,0.12);
-    border-color: var(--blue);
-  }
-  .project-tag {
-    display: inline-block;
-    background: var(--light);
-    color: var(--blue);
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 4px 10px;
-    margin-bottom: 1rem;
-    border: 1px solid var(--line);
-  }
-  .project-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.15rem;
-    color: var(--navy);
-    margin-bottom: 0.75rem;
-    line-height: 1.3;
-  }
-  .project-desc {
-    font-size: 0.88rem;
-    color: #555;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-  }
-  .project-tools {
-    display: flex; flex-wrap: wrap; gap: 0.4rem;
-  }
-  .tool-badge {
-    background: var(--navy);
-    color: var(--pale);
-    font-size: 0.7rem;
-    font-weight: 600;
-    padding: 3px 10px;
-    letter-spacing: 0.04em;
-  }
+  <div class="projects-grid">
+
+  <div class="project-card">
+    <div class="project-tag">Simulation · AXENS</div>
+    <h3 class="project-title">Shenhua Yulin — Fractionation Section</h3>
+    <p class="project-desc">P&ID mark-up, equipment list, line sizing, hydraulic balance, technical datasheets for control valves, instruments, separators, heat exchangers, pumps and air coolers. Stream simulations on PRO/II.</p>
+    <div class="project-tools">
+      <span class="tool-badge">PRO/II</span>
+      <span class="tool-badge">AutoCAD P&ID</span>
+      <span class="tool-badge">SHELLDEP</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-tag">Hydraulics · TotalEnergies</div>
+    <h3 class="project-title">Firewater Network Study</h3>
+    <p class="project-desc">Hydraulic simulation of firewater network using AFT Fathom. Verified flow distribution, pressure, pump capacity and critical demand points. Identified bottlenecks and presented results in technical review meetings with TotalEnergies.</p>
+    <div class="project-tools">
+      <span class="tool-badge">AFT Fathom</span>
+      <span class="tool-badge">API</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-tag">FEED · SOFREGAZ</div>
+    <h3 class="project-title">NGL Depot — FEED Engineering</h3>
+    <p class="project-desc">Managed P&ID mark-ups, integration of client comments and revision follow-up during FEED phase. Ensured consistency with process documentation and coordinated deliverables between drafting team and client.</p>
+    <div class="project-tools">
+      <span class="tool-badge">AutoCAD P&ID</span>
+      <span class="tool-badge">GPSA</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-tag">Process Design · AXENS</div>
+    <h3 class="project-title">Butene-1 Unit — Paradip Petrochemical</h3>
+    <p class="project-desc">Process calculations, hydraulic calculations and instrument sizing for the Butene-1 unit. Technical datasheets for control valves, instrumentation and piping process elements.</p>
+    <div class="project-tools">
+      <span class="tool-badge">PIPESIM</span>
+      <span class="tool-badge">API</span>
+      <span class="tool-badge">TEMA</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-tag">Refinery · AXENS</div>
+    <h3 class="project-title">PRL — Refinery Expansion & Upgrade</h3>
+    <p class="project-desc">Process calculations for Prime G (GHT), Prime D (DHT) and Alkylation units. Hydraulic calculations, instrument sizing, control valve datasheets and piping line lists.</p>
+    <div class="project-tools">
+      <span class="tool-badge">Aspen HYSYS</span>
+      <span class="tool-badge">API</span>
+      <span class="tool-badge">GPSA</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-tag">Simulation · EPPM</div>
+    <h3 class="project-title">Natural Gas Dehydration — Oued Zar</h3>
+    <p class="project-desc">Full simulation, sizing and optimization of a natural gas dehydration unit in Tataouine. Applied Kern method for heat exchanger design, validated with Aspen EDR and SHELLDEP. Economic analysis included.</p>
+    <div class="project-tools">
+      <span class="tool-badge">Aspen HYSYS</span>
+      <span class="tool-badge">Aspen EDR</span>
+      <span class="tool-badge">SHELLDEP</span>
+    </div>
+  </div>
+
+</div>
 
   /* ── SKILLS ── */
   #skills { background: var(--navy); }
